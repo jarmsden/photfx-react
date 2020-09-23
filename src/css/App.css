@@ -49,11 +49,11 @@ body {
 }
 
 .sidebar-item:hover, .sidebar-item:focus {
-    background-color: hsl(255, 6%, 50%);
+    background-color: hsl(255, 6%, 35%);
 }
 
 .sidebar-item.active {
-    background-color: hsl(255, 6%, 35%);
+    background-color: hsl(255, 6%, 45%);
 }
 
 .sidebar-item::after {
@@ -63,13 +63,14 @@ body {
     left: 10%;
     bottom: 0;
     height: 1px;
-    background-color: hsl(255, 6%, 50%);
+    background-color: hsl(255, 6%, 75%);
 }
+
 .sidebar-item:last-child::after {
     display: none;
 }
 
-.slider-container {
+.adjuster-container {
     grid-area: slider;
     margin-top: 2rem;
     padding: 2rem;

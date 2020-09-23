@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function SidebarItem({test}) {
+export default function SidebarItem({ name, active, handleClick }) {
     return (
         <div>
-            <button className={`sidebar-item ${test}`}>Sidebar Item</button>
+            <button 
+            className={`sidebar-item ${active ? 'active' : ''}`}
+            onClick={handleClick}
+            >{name}</button>
         </div>
     )
 }
